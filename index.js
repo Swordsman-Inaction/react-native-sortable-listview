@@ -10,6 +10,8 @@ import {
   TouchableWithoutFeedback
 } from 'react-native';
 
+const { KeyboardAwareListView } = require('react-native-keyboard-aware-scroll-view');
+
 let HEIGHT = Dimensions.get('window').height;
 var Row = React.createClass({
   _data: {},
@@ -315,7 +317,7 @@ var SortableListView = React.createClass({
     let dataSource = this.state.ds.cloneWithRows(this.props.data, this.props.order);
 
     return <View ref="wrapper" style={{flex: 1}} onLayout={()=>{}}>
-      <ListView
+      <KeyboardAwareListView
         enableEmptySections={true}
         {...this.props}
         {...this.state.panResponder.panHandlers}
