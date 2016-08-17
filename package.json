@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "react-timer-mixin": "^0.13.3",
-    "react-native-sortable-listview": "git://github.com/Swordsman-Inaction/react-native-keyboard-aware-scroll-view.git#taizi"
+    "react-native-sortable-listview": "git://github.com/Swordsman-Inaction/react-native-keyboard-aware-scroll-view.git#34189cdb09bab1128e79f40e3c8ba713df84cfe4"
   },
   "keywords": [
     "react-component",
